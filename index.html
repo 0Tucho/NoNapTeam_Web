@@ -2,24 +2,31 @@
 <html lang="es">
 
 <head>
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>NoNap Team | Estudiar>Dormir</title>
   <meta name="description"
     content="Grupo de estudio para desarrolladores web. Encuentra las mejores herramientas disponibles para aprender.">
+  <link rel="shortcut icon" href="./images/logo.svg" />
+
+  <script src="https://kit.fontawesome.com/d91e5581b0.js" crossorigin="anonymous"></script>
   <link
     href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Iceberg&display=swap"
     rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/d91e5581b0.js" crossorigin="anonymous"></script>
-  <link rel="shortcut icon" href="./images/logo.svg" />
+
 </head>
 
 <body>
+
   <header>
 
     <div class="logo">
+
       <picture class="logo__img">
         <img src="./images/logo.svg" alt="Logo">
       </picture>
@@ -45,7 +52,7 @@
 
   <main>
 
-    <div class="conteiner">
+    <div class="container">
 
       <section class="card" id="join">
         <picture class="card__img">
@@ -55,14 +62,15 @@
       </section>
 
       <section class="card" id="text1">
-        <h4 class="card__titel">Mira los temas de tu interes y conecta con otros estudiantes</h4>
-        <p class="card__paragraph">Crea temas de estudio o mira los temas que han creado otros estudiantes y unete para
-          acelerar tus metas de
-          aprendizaje</p>
+        <div class="card__text">
+          <h4 class="card__title">Mira los temas de tu interes y conecta con otros estudiantes</h4>
+          <p class="card__paragraph">Crea temas de estudio o mira los temas que han creado otros estudiantes y unete
+            para acelerar tus metas de aprendizaje</p>
+        </div>
       </section>
 
       <section class="card" id="popularThemes">
-        <h4 class="card__title"></h4>
+        <h4 class="card__title">Temas más populares</h4>
         <ul class="card__list list__container">
           <li class="list__item">Responsive Desing: Mobile first</li>
           <li class="list__item">Inglés intermedio para developers</li>
@@ -82,7 +90,7 @@
           <img src="./images/grupoTotal.svg" alt="">
         </picture>
         <div class="card__text">
-          <h4 class="card__titel">Encuentra compañeros de estudio que estén a tu nivel</h4>
+          <h4 class="card__title">Encuentra compañeros de estudio que estén a tu nivel</h4>
           <p class="card__paragraph">Ideales para estudiar en grupo, mejorar tus habilidades y organizar proyectos en
             conjunto.</p>
         </div>
@@ -93,7 +101,7 @@
           <img src="./images/cvTotal.svg" alt="">
         </picture>
         <div class="card__text">
-          <h4 class="card__titel">Te conectamos con empresas que estén en busca de tu talento</h4>
+          <h4 class="card__title">Te conectamos con empresas que estén en busca de tu talento</h4>
           <p class="card__paragraph">Te permitimos activar la opción “Busco empleo” para que seas visible para
             empresas y particulares en busca de tu perfil pofesional</p>
         </div>
@@ -104,7 +112,7 @@
           <img src="./images/comunicacionToral.svg" alt="">
         </picture>
         <div class="card__text">
-          <h4 class="card__titel">Creamos canales de telegram y discord para cada tema de estudios.</h4>
+          <h4 class="card__title">Creamos canales de telegram y discord para cada tema de estudios.</h4>
           <p class="card__paragraph">Generamos canales en distintas plataformas para asegurar la comunicación fluida de
             los grupos.</p>
         </div>
@@ -112,18 +120,22 @@
 
       <section class="card" id="staff">
         <h4 class="card__title">staff</h4>
-        <div class="sub-card" id="tucho">
-          <picture class="sub-card__img">
-            <img src="./images/tucho.svg" alt="">
-          </picture>
-          <span class="sub-card__name">Tucho</span>
+        <div class="sub-card">
+          <div class="sub-card__item" id="tucho">
+            <picture class="sub-card__img">
+              <img src="./images/tucho.svg" alt="">
+            </picture>
+            <span class="sub-card__name">Tucho</span>
+          </div>
+          <div class="sub-card__item" id="carricita">
+            <picture class="sub-card__img">
+              <img src="./images/carricita.svg" alt="">
+            </picture>
+            <span class="sub-card__name">Carricita</span>
+          </div>
+
         </div>
-        <div class="sub-card" id="carricita">
-          <picture class="sub-card__img">
-            <img src="./images/carricita.svg" alt="">
-          </picture>
-          <span class="sub-card__name">Carricita</span>
-        </div>
+
       </section>
 
     </div>
@@ -131,30 +143,41 @@
   </main>
 
 
-  <footer>
-    <div class="box" id="fooder__sponsor">
-      <h4 class="box__title"></h4>
-      <picture class="box__img"><img src="images/platzi.svg" alt="Imagen de platzi"></picture>
+  <footer class="container">
+
+    <div class="card" id="fooder__sponsor">
+      <h4 class="card__title"></h4>
+      <picture class="card__img"><img src="images/platzi.svg" alt="Imagen de platzi"></picture>
     </div>
-    <div class="box" id="footer__info">
-      <h4 class="box__title">Desarrolladores:</h4>
-      <ul class="box__list">
+
+    <div class="card" id="footer__info">
+      <h4 class="card__title">Desarrolladores:</h4>
+      <ul class="card__list">
         <li><a href="#"> @Tucho </a></li>
         <li><a href="#"> @Carricita</a> </li>
         <!-- <li> <a href=""> @Jeisson </a></li> -->
       </ul>
     </div>
-    <div class="box" id="footer__info--1">
-      <h4 class="box__title">Más:</h4>
-      <p class="info__text">Sumate al equipo<br>Legales</p>
+
+    <div class="card" id="footer__info--1">
+      <div>
+        <h4 class="card__title">Más:</h4>
+        <p class="card__paragraph info__text">Sumate al equipo Legales</p>
+      </div>
+
     </div>
-    <ul class="box" id="footer__socials">
-      <li><a href="#"><i class="fa-brands fa-facebook fa-3x"></i></a> </li>
-      <li><a href="#"><i class="fa-brands fa-twitter fa-3x"></i></a></li>
-      <li><a href="#"><i class="fa-brands fa-instagram fa-3x"></i></a></li>
-      <i class=""></i>
-    </ul>
+    <div class="card" id="footer__social">
+      <ul class="card__list">
+        <li><a href="#"><i class="fa-brands fa-facebook fa-3x"></i></a> </li>
+        <li><a href="#"><i class="fa-brands fa-twitter fa-3x"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram fa-3x"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-github fa-3x"> </i></a></li>
+      </ul>
+    </div>
+
+
   </footer>
+
 </body>
 
 </html>
