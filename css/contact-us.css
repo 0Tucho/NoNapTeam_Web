@@ -10,6 +10,10 @@
     margin: 3rem auto;
 }
 
+.title>h1 {
+    width: 100%;
+}
+
 /*      contact */
 
 /*          decoracion */
@@ -18,14 +22,13 @@
 }
 
 /*          form */
-#contact__form {
-    margin-top: 0px;
-    padding: 0;
-    padding-bottom: 5vh;
+#contact_right {
+    width: 100%;
 }
 
-.contact__form>* {
-    margin: 1rem;
+#contact__form {
+    margin: auto;
+    padding: 0;
 }
 
 .card__input {
@@ -69,4 +72,27 @@ footer {
     width: 100%;
 }
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+
+    .contact {
+        padding: 0;
+    }
+
+    #contact__decoration {
+        display: flex;
+        background: #E1FD70;
+        flex-direction: column;
+        width: 30%;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    #contact__right {
+        width: 70%;
+    }
+
+    .card {
+        margin: 0;
+        padding: 0;
+    }
+}
