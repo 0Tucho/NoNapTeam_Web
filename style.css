@@ -19,7 +19,7 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: clamp(0.62rem, 0.425rem + 1vw, 0.9rem);
     font-family: var(--icceberg);
 
 }
