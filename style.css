@@ -101,6 +101,7 @@ header {
     /* max-width: 32rem; */
 
     margin: auto;
+    position: relative;
 }
 
 .nav__item {
